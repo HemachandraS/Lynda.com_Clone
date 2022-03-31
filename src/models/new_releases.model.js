@@ -19,3 +19,4 @@ const new_releasesSchema = new mongoose.Schema(
 
 const NewReleases = mongoose.model("new_releases", new_releasesSchema);
 module.exports = NewReleases;
+
