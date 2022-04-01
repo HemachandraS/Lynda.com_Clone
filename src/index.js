@@ -13,11 +13,13 @@ app.get("", (req, res) => {
 const { register, login } = require("./controllers/auth.controller");
 const new_releasesController = require("./controllers/new_releases.controller");
 const html_courseController = require("./controllers/html_course.controller");
+const css_courseController = require("./controllers/css_course.controller");
 const top_pick_courseController = require("./controllers/top_pick_course_controller");
 app.post("/register", register);
 app.post("/login", login);
 app.use("/top_pick_course",top_pick_courseController);
 app.use("/html_course", html_courseController);
+app.use("/css_course", css_courseController);
 app.use("/new_releases", new_releasesController);
 module.exports = app;
 
