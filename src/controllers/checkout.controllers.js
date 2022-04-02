@@ -24,13 +24,7 @@ const Payment = require("../models/payment.model");
                                                                                   //     const data = await payment.save();
                                                                                   //     console.log(data);
                                                                                   //     return res.send(payment) 
-                                                                                  //                                           // return res.render(MR.mainpage  {HTML/something})  =======================>
-                                                                                  //                                           // =>change send to render
-                                                                                  //                                           // } else {
-                                                                                  //                                           //   // await showAlert ;
-                                                                                  //                                           //   return res.send("erroooooorrrrrrrrrrrrrr");
-                                                                                  //                                           //}
-                                                                        
+                                                                     
 router.post("/", async (req, res) => {
 try {
 const payment = await Payment.create(req.body)
