@@ -30,15 +30,7 @@ const Payment = require("../models/payment.model");
                                                                                   //                                           //   // await showAlert ;
                                                                                   //                                           //   return res.send("erroooooorrrrrrrrrrrrrr");
                                                                                   //                                           //}
-                                                                                  // } }
-                                                                                  // catch (error) {
-                                                                                  //   return res.send(error)
-                                                                                  // }
-
-
-
-                                                                                  // });
-
+                                                                        
 router.post("/", async (req, res) => {
 try {
 const payment = await Payment.create(req.body)
