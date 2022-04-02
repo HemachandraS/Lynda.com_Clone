@@ -1,7 +1,7 @@
 
 const mongoose = require("mongoose");
 
-const html_courseSchema = new mongoose.Schema(
+const js_courseSchema = new mongoose.Schema(
   {
     img: { type: String, required: false },
     title: { type: String, required: false },
@@ -18,6 +18,6 @@ const html_courseSchema = new mongoose.Schema(
   }
 );
 
-const HTMLCourse = mongoose.model("js_course", html_courseSchema);
-module.exports = HTMLCourse;
+const JsCourse = mongoose.model("js_course", js_courseSchema);
+module.exports = JsCourse;
 
