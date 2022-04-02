@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const Payment = require("../models/payment.model");
 
-                                                                                  //                                             // router.get("", async (req, res) => {
+                                                                                 
                                                                                   //                                             //   return res.render("HTML/checkout.ejs");
                                                                                   //                                             // });
                                                                                   // router.post("/", async (req, res) => {
@@ -20,25 +20,8 @@ const Payment = require("../models/payment.model");
                                                                                   //       country: req.body.country,
                                                                                   //       postal: req.body.postal,
                                                                                   //       gst: req.body.gst,
-                                                                                  //     });
-                                                                                  //     const data = await payment.save();
-                                                                                  //     console.log(data);
-                                                                                  //     return res.send(payment) 
-                                                                                  //                                           // return res.render(MR.mainpage  {HTML/something})  =======================>
-                                                                                  //                                           // =>change send to render
-                                                                                  //                                           // } else {
-                                                                                  //                                           //   // await showAlert ;
-                                                                                  //                                           //   return res.send("erroooooorrrrrrrrrrrrrr");
-                                                                                  //                                           //}
-                                                                                  // } }
-                                                                                  // catch (error) {
-                                                                                  //   return res.send(error)
-                                                                                  // }
-
-
-
-                                                                                  // });
-
+                                                                           
+                                                                     
 router.post("/", async (req, res) => {
 try {
 const payment = await Payment.create(req.body)
