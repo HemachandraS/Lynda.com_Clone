@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const Payment = require("../models/payment.model");
 
-                                                                                  //                                             // router.get("", async (req, res) => {
+                                                                                 
                                                                                   //                                             //   return res.render("HTML/checkout.ejs");
                                                                                   //                                             // });
                                                                                   // router.post("/", async (req, res) => {
