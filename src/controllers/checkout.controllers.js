@@ -20,10 +20,7 @@ const Payment = require("../models/payment.model");
                                                                                   //       country: req.body.country,
                                                                                   //       postal: req.body.postal,
                                                                                   //       gst: req.body.gst,
-                                                                                  //     });
-                                                                                  //     const data = await payment.save();
-                                                                                  //     console.log(data);
-                                                                                  //     return res.send(payment) 
+                                                                           
                                                                      
 router.post("/", async (req, res) => {
 try {
