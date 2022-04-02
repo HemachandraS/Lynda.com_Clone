@@ -8,6 +8,7 @@ const paySchema = new mongoose.Schema({
   country: { type: String, required: false },
   postal: { type: String, required: true },
   gst: { type: String, required: true },
+  status: { type: String, required: true , default:true},
 },
 {
   versionKey: false,
